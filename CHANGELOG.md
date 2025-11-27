@@ -31,9 +31,15 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ## Unreleased
 
+## [v3.1.0](https://github.com/JulianToledano/goingecko/releases/tag/v3.1.0) - 2025-11-28
+
 ### Features
 
 * [47](https://github.com/JulianToledano/goingecko/pull/47) Adds a rate limited client with configurable request limits and exponential backoff retry policy.
+
+## Bug Fixes
+
+* [50](https://github.com/JulianToledano/goingecko/pull/50) Fix typo on markets `Market.MarketCapRank` field.
 
 ## [v3.0.3](https://github.com/JulianToledano/goingecko/releases/tag/v3.0.3) - 2025-04-18
 
