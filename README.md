@@ -185,5 +185,4 @@ func main() {
 
 ## Todo
 
- - [ ] Implement premium API endpoints
  - [ ] Implement On Chain Dex API

@@ -31,6 +31,8 @@ Ref: https://keepachangelog.com/en/1.0.0/
 
 ## Unreleased
 
+## [v3.2.0](https://github.com/JulianToledano/goingecko/releases/tag/v3.2.0) - 2026-07-04
+
 ### Features
 
 * [53](https://github.com/JulianToledano/goingecko/pull/53) Add implementation for coingecko [websockets api](https://docs.coingecko.com/websocket)
