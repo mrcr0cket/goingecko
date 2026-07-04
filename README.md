@@ -41,10 +41,10 @@ Key features:
 | /coins/{id}/ohlc                         | ✓ | CoinsOhlc               | 🦎 | 
 | /coins/{id}/supply_breakdown             | ✓ | CoinsIdSupplyBreakdown  | 💼 |
 | /coins/{id}/ohlc/range                   | ✓ | CoinsOhlcRange          | 💼 |
-| /coins/id/circulating_supply_chart       | ✗ |                         | 👑 |
-| /coins/id/circulating_supply_chart/range | ✗ |                         | 👑 |
-| /coins/id/total_supply_chart             | ✗ |                         | 👑 |
-| /coins/id/total_supply_chart/range       | ✗ |                         | 👑 |
+| /coins/{id}/circulating_supply_chart     | ✓ | CoinsIdCirculatingSupplyChart | 👑 |
+| /coins/{id}/circulating_supply_chart/range | ✓ | CoinsIdCirculatingSupplyChartRange | 👑 |
+| /coins/{id}/total_supply_chart           | ✓ | CoinsIdTotalSupplyChart | 👑 |
+| /coins/{id}/total_supply_chart/range     | ✓ | CoinsIdTotalSupplyChartRange | 👑 |
 
 ### Contract Endpoints
 | Endpoint                                                   |  Status | Function                  | Plan |
@@ -67,7 +67,7 @@ Key features:
 | /exchanges/{id}                        | ✓ | ExchangesId            | 🦎 |
 | /exchanges/{id}/tickers                | ✓ | ExchangesIdTickers     | 🦎 |
 | /exchanges/{id}/volume_chart           | ✓ | ExchangesIdVolumeChart | 🦎 |
-| /exchanges/id/volume_chart/range       | ✗ |                        | 💼 |
+| /exchanges/{id}/volume_chart/range     | ✓ | ExchangesIdVolumeChartRange | 💼 |
 
 ### Derivatives Endpoints
 | Endpoint                                                   |  Status | Function                  | Plan |
@@ -83,23 +83,22 @@ Key features:
 | /nfts/list                                                     | ✓ | NftsList     | 🦎 |
 | /nfts/{id}                                                     | ✓ | NftsId       | 🦎 |
 | /nfts/{asset_platform_id}/contract/{contract_address}          | ✓ | NftsContract | 🦎 |
-| /nfts/markets                                                  | ✗ |              | 💼 |
-| /nfts/id/market_chart                                          | ✗ |              | 💼 |
-| /nfts/asset_platform_id/contract/contract_address/market_chart | ✗ |              | 💼 |
-| /nfts/id/tickers                                               | ✗ |              | 💼 |
+| /nfts/markets                                                  | ✓ | NftsMarkets  | 💼 |
+| /nfts/{id}/market_chart                                        | ✓ | NftsIdMarketChart | 💼 |
+| /nfts/{asset_platform_id}/contract/{contract_address}/market_chart | ✓ | NftsContractMarketChart | 💼 |
+| /nfts/{id}/tickers                                             | ✓ | NftsIdTickers | 💼 |
 
 ### Other Endpoints
 | Endpoint                                |  Status | Function                 | Plan |
 |-----------------------------------------|--|--------------------------|----|
 | /asset_platforms                        | ✓ | AssetPlatforms           | 🦎 |
-| /token_lists/asset_platform_id/all.json | ✗ |                          | 👑 |
 | /key                                    | ✓ | AssetPlatforms           | 💼 |
-| /exchange_rates                         | ✗ |                          | 🦎 |
+| /exchange_rates                         | ✓ | ExchangeRates                        | 🦎 |
 | /search                                 | ✓ | Search                   | 🦎 |
 | /search/trending                        | ✓ | Trending                 | 🦎 |
 | /global                                 | ✓ | Global                   | 🦎 |
 | /global/decentralized_finance_defi      | ✓ | DecentrilizedFinanceDEFI | 🦎 |
-| /global/market_cap_chart                | ✗ |                          | 💼 |
+| /global/market_cap_chart                | ✓ | GlobalMarketCapChart     | 💼 |
 | /companies/public_treasury/{coin_id}    | ✓ | PublicTreasuryCoinId     | 🦎 |
 
 #### Legend
